@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 02-Jan-2025, 3:44:26 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.CarDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="CarDTO" lazy="false">
+        <property name="CarName" type="java.lang.String">
+            <column name="CARNAME" />
+        </property>
+        <property name="CarModel" type="java.lang.Integer">
+            <column name="CARMODEL" />
+        </property>
+        <property name="CarPrice" type="java.lang.Integer">
+            <column name="CARPRICE" />
+        </property>
+        <property name="Carpurchasedate" type="java.util.Date">
+            <column name="CARPURCHASEDATE" />
+        </property>
+    </subclass>
+</hibernate-mapping>

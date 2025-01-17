@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-Dec-2024, 11:58:43 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+    <class name="SupplierDTO" table="ST_SUPPLIERDTO">
+<id name="id" type="java.lang.Long">
+			<column name="ID"></column>
+			<generator class="increment"></generator>
+		</id>
+        
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        
+        <property name="category" type="java.lang.String">
+            <column name="CATEGORY" />
+        </property>
+        <property name="registrationdate" type="java.util.Date">
+            <column name="REGISTRATIONDATE" />
+        </property>
+        <property name="paymentterm" type="int">
+            <column name="PAYMENTTERM" />
+        </property>
+    </class>
+</hibernate-mapping>

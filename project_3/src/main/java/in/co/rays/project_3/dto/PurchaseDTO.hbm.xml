@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 30-Dec-2024, 3:00:31 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto">
+      <class name="PurchaseDTO" table="PURCHASEDTO">
+      
+        <id name="totalquantity" type="int">
+            <column name="TOTALQUANTITY" />
+            <generator class="incremet" />
+        </id>
+        <property name="product" type="java.lang.String">
+            <column name="PRODUCT" />
+        </property>
+        <property name="orderdate" type="java.util.Date">
+            <column name="ORDERDATE" />
+        </property>
+        <property name="totalCost" type="double">
+            <column name="TOTALCOST" />
+        </property>
+    </class>
+</hibernate-mapping>

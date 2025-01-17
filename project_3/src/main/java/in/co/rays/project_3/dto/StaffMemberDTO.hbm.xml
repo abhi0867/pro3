@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 09-Jan-2025, 3:27:03 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.StaffMemberDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="StaffMemberDTO" lazy="false">
+        <property name="Identifier" type="java.lang.Integer">
+            <column name="IDENTIFIER" />
+        </property>
+        <property name="PreviousEmployer" type="java.lang.String">
+            <column name="PREVIOUSEMPLOYER" />
+        </property>
+        <property name="Joiningdate" type="java.util.Date">
+            <column name="JOININGDATE" />
+        </property>
+        <property name="fullName" type="java.lang.String">
+            <column name="FULLNAME" />
+        </property>
+        <property name="Division" type="java.lang.String">
+            <column name="DIVISION" />
+        </property>
+    </subclass>
+</hibernate-mapping>

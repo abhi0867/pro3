@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 06-Jan-2025, 4:12:22 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.ItemInformationDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="ItemInformationDTO" lazy="false">
+        <property name="title" type="java.lang.String" access="field">
+            <column name="TITLE" />
+        </property>
+        <property name="overview" type="java.lang.String" access="field">
+            <column name="OVERVIEW" />
+        </property>
+        <property name="cost" type="java.lang.Double" access="field">
+            <column name="COST" />
+        </property>
+        <property name="purchasedate" type="java.util.Date" access="field">
+            <column name="PURCHASEDATE" />
+        </property>
+        <property name="category" type="java.lang.String" access="field">
+            <column name="CATEGORY" />
+        </property>
+    </subclass>
+</hibernate-mapping>
